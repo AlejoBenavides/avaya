@@ -176,7 +176,7 @@ document.getElementById("opcion-salir-configuracion").addEventListener("click", 
             }, 400)
 })
 
-//LOGUEARSE, ESTADO CONDICIONALMENTE DISPONIBLE
+//LOGUEARSE, ESTADO CONDICIONALMENTE DISPONIBLE ----- EL LOGIN ES EL 10100 ------------------ 
 
 const formInput = document.getElementById("form-input")
 formInput.addEventListener("submit", (e) => {
