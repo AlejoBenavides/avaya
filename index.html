@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon-onex.ico">
+    <title>AVAYA One-X</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+    <!--ICONOS DE ESCRITORIO-->
+
+    <div class="contenedor-iconos-escritorio">
+        <div class="contenedor-papelera contenedor-icono">
+            <img class="papelera-img icono-escritorio" src="img/papelera.png" alt="Papelera" title="Papelera de reciclaje">
+            <p class="papelera-text icono-text">Papelera de reciclaje</p>
+        </div>
+        <div class="contenedor-acrobat contenedor-icono">
+            <img class="acrobat-img icono-escritorio" src="img/acrobat.png" alt="Acrobat" title="Acrobat Reader DC">
+            <p class="acrobat-text icono-text">Acrobat Reader DC</p>
+        </div>
+        <div class="contenedor-americasdesk contenedor-icono">
+            <img class="americasdesk-img icono-escritorio" src="img/titan.png" alt="Titan" title="Americas Desktop">
+            <p class="americasdesk-text icono-text">Americas Desktop</p>
+        </div>
+        <div class="contenedor-avaya contenedor-icono" id="icono-avaya">
+            <img class="avaya-img icono-escritorio" src="img/avaya.png" alt="Avaya" title="Avaya one-X agent">
+            <p class="avaya-text icono-text">Avaya one-X agent</p>
+        </div>
+        <div class="contenedor-extension contenedor-icono" id="dos-extensiones">
+            <img class="extension-img icono-escritorio" src="img/extension.jpg" alt="Extension" title="Extensión">
+            <p class="extension-text icono-text">Extensión</p>
+        </div>
+        <div class="contenedor-juego contenedor-icono" id="juego">
+            <img class="juego-img icono-escritorio" src="img/mario.png" alt="juego" title="Jugar Mario Bros">
+            <p class="juego-text icono-text">Jugar Mario Bros</p>
+        </div>
+        <div class="contenedor-vpn contenedor-icono">
+            <img class="vpn-img icono-escritorio" src="img/vpn.png" alt="vpn" title="Forti Client VPN">
+            <p class="vpn-text icono-text">Forti Client VPN</p>
+        </div>
+        <div class="contenedor-chrome contenedor-icono">
+            <img class="chrome-img icono-escritorio" src="img/chrome.png" alt="chrome" title="Google Chrome">
+            <p class="chrome-text icono-text">Google Chrome</p>
+        </div>
+        <div class="contenedor-office contenedor-icono">
+            <img class="office-img icono-escritorio" src="img/libre-office.png" alt="office" title="Libre Office 6.0">
+            <p class="office-text icono-text">Libre Office</p>
+        </div>
+        <div class="contenedor-edge contenedor-icono">
+            <img class="edge-img icono-escritorio" src="img/edge.png" alt="edge" title="Microsoft Edge">
+            <p class="edge-text icono-text">Microsoft Edge</p>
+        </div>
+        <a class="manual-avaya" href="manual/Presentación_AVAYA_One-X_agent.pdf" target="_blank"><div class="contenedor-manual contenedor-icono">
+            <img class="icon-manual icono-escritorio" src="img/icon-manual.png" alt="manual" title="Manual Avaya One-X">
+            <p class="manual-text icono-text">Manual Avaya One-X</p>
+        </div></a>
+        <div class="contenedor-llamada contenedor-icono" id="contenedor-llamada">
+            <img class="entro-llamada icono-escritorio" src="img/entro-llamada.png" alt="llamada" title="Simulación de llamada">
+            <p class="llamada-text icono-text">Simulación de llamada</p>
+        </div>
+    </div>
+
+    <!--VENTANA DE D.O.S. QUE JALA LA EXTENSIÓN-->
+
+    <img src="img/dos.png" alt="" id="ventana-dos" class="dos-extensiones">
+
+    <!--VENTANA DE AVAYA CARGANDO-->
+
+    <img src="img/cargando.png" alt="" class="avaya-cargando" id="avaya-cargando">
+
+    <!--VENTANA ACEPTAR DE AVAYA-->
+
+    <div class="ventana-aceptar-avaya" id="aceptar-avaya">
+        <img src="img/logo-onex.png" alt="" class="logo-avaya-aceptar">
+        <img src="img/menu-ventana-aceptar-avaya.png" alt="" title="Opciones del sistema" class="menu-ventana-aceptar-avaya">
+        <p class="ventana-aceptar-avaya-text">Bienvenido</p>
+        <div class="contenedor-btn-ventana-aceptar-avaya">
+            <button class="btn-config-ventana-aceptar-avaya btn-ventana-aceptar-avaya" id="btn-config-avaya">Cambiar configuración de ingreso</button>
+            <button class="btn-aceptar-ventana-aceptar-avaya btn-ventana-aceptar-avaya" id="btn-aceptar-ventana-aceptar">Aceptar</button>
+            <button class="btn-cancelar-ventana-aceptar-avaya btn-ventana-aceptar-avaya" id="btn-cancelar-ventana-aceptar">Cancelar</button>
+        </div>
+    </div>
+
+    <!--VENTANA INICIAL DE AVAYA-->
+
+    <div class="contenedor-ventana-inicial-avaya" id="contenedor-ventana-inicial-avaya">
+        <img src="img/transferencia-contactos.png" class="transferencia-contactos" id="transferencia-contactos" alt="">
+        <img src="img/cerrar-avaya.png" class="cerrar-avaya-contactos" id="cerrar-avaya-contactos" alt="" title="Cerrar lista de contactos">
+        <img src="img/area-transferencia.png" class="btn-area-transfer1 btn-area-transfer" id="btn-area-transfer1" alt="">
+        <img src="img/area-transferencia.png" class="btn-area-transfer2 btn-area-transfer" id="btn-area-transfer2" alt="">
+        <img src="img/area-transferencia.png" class="btn-area-transfer3 btn-area-transfer" id="btn-area-transfer3" alt="">
+        <img src="img/area-transferencia.png" class="btn-area-transfer4 btn-area-transfer" id="btn-area-transfer4" alt="">
+        <img class="ventana-inicial-avaya" src="img/ventana-inicial-avaya.png" alt="">
+        <form id="form-input">
+            <input type="text" class="input-avaya" id="input-avaya">
+            <input type="submit" value="Oculto" class="submit-oculto" id="submit-oculto">
+        </form>
+        <img src="img/cerrar-avaya.png" class="cerrar-avaya" id="cerrar-avaya" alt="" title="Salir de la aplicación">
+        <img src="img/menu-ventana-aceptar-avaya.png" alt="" class="menu-avaya" title="Opciones del sistema"  id="btn-opciones-sistema">
+        <img src="img/mute-off-avaya.png" alt="" class="mute-off-avaya" id="mute-off-avaya" title="Silenciar teléfono">
+        <img src="img/mute-avaya.png" alt="" class="mute-avaya" id="mute-avaya" title="Desactivar silencio del teléfono">
+        <div class="contenedor-opciones-configuracion" id="menu-opciones-sistema">
+            <img src="img/opciones-configuracion.png" alt="" class="opciones-configuracion">
+            <div class="opcion1-configuracion" id="opcion1-configuracion"></div>
+            <div class="opcion2-configuracion" id="opcion2-configuracion"></div>
+            <div class="opcion-salir-configuracion" id="opcion-salir-configuracion"></div>
+        </div>
+        <div class="contenedor-entro-llamada" id="contenedor-entro-llamada">
+            <span class="letrero-encurso">En curso</span>
+            <img class="conferencia1" src="img/call_menu.png" alt="">
+            <img class="conferencia2" src="img/conf_menu.png" alt="" title="Conferencia">
+            <div class="contenedor-btn-llamada">
+                <span class="numero-tel" id="numero-tel"></span>
+                <div class="tiempo">
+                    <span>00</span>:<span>00</span>:<span id="segundos">00</span>
+                </div>
+                <img class="btn-hold-on" id="btn-hold-on" src="img/hold-on.png" title="Retomar llamada">
+                <img class="btn-hold" id="btn-hold" src="img/hold.png" alt="" title="Poner llamada en retención">
+                <img class="btn-transferir" id="btn-transferir" src="img/transferir.png" alt="" title="Transferir llamada">
+                <img class="btn-colgar" id="btn-colgar" src="img/colgar.png" alt="" title="Finalizar llamada">
+            </div>
+            <div class="contenedor-opciones-transferencia" id="contenedor-opciones-transferencia">
+                <img class="opciones-transferencia" src="img/opciones-transferencia.png" alt="">
+                <div class="contactos" id="contactos"></div>
+                <div class="valor" id="valor"></div>
+            </div>
+        </div>
+        <img class="btn-transferir-valor" id="btn-transferir-valor" src="img/btn-transferir-valor.png" alt="" title="Transferir llamada">
+    </div>
+
+    <!--VENTANA CONTROLES DEL AUDIO-->
+    
+    <div class="contenedor-controles-audio" id="contenedor-controles-audio">
+        <img src="img/opciones-audio.png" alt="" class="controles-audio">
+        <img src="img/cerrar-avaya.png" class="cerrar-controles-audio" id="cerrar-controles-audio" alt="" title="Salir de la aplicación">
+        <div class="opcion-sonido"></div>
+        <input type="range" name="" id="" class="btn-range btn-control-audio1">
+        <input type="range" name="" id="" class="btn-range btn-control-audio2">
+        <input type="range" name="" id="" class="btn-range btn-control-audio3">
+        <div class="contenedor-btn-controles-audio">
+            <button class="btn-aceptar-controles-audio btn" id="btn-aceptar-controles-audio">Aceptar</button>
+            <button class="btn-cancelar-controles-audio btn" id="btn-cancelar-controles-audio">Cancelar</button>
+        </div>
+    </div>
+
+    <!--VENTANA CONFIGURACIÓN DEL SISTEMA-->
+
+    <div class="contenedor-config-sistema" id="contenedor-config-sistema">
+        <img src="img/config-sistema-agent.png" alt="" class="config-sistema-agent abajo arriba" id="config-sistema-agent">
+        <img src="img/config-sistema-tel.png" alt="" class="config-sistema-tel arriba abajo" id="config-sistema-tel">
+        <img src="img/cerrar-avaya.png" class="cerrar-config-sistema" alt="" title="Cerrar">
+        <div class="pestana-tel" id="pestana-tel" title="Telefonía"></div>
+        <div class="pestana-agent" id="pestana-agent" title="Agente"></div>
+        <div class="contenedor-btn-config-sistema">
+            <button class="btn-guardar-config-sistema btn" id="btn-guardar-config-sistema">Guardar configuración e ingresar</button>
+            <button class="btn-cancelar-config-sistema btn" id="btn-cancelar">Cancelar</button>
+        </div>
+    </div>
+
+    <!--VENTANA PROHIBIDO JUGAR-->
+
+    <div id="prohibido-jugar" class="contenedor-prohibido-jugar">
+        <p class="texto-prohibido">¡AQUÍ NO SE VIENE A JUGAR!</p>
+        <img class="img-prohibido-jugar" src="img/leyH.gif" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

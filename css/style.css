@@ -1,0 +1,742 @@
+/*ESTILOS DEL BODY*/
+
+body{
+    background-image: url(../img/fondo-win-10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+/*ESTILOS DEL ESCRITORIO*/
+
+.contenedor-iconos-escritorio{
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.contenedor-icono{
+    box-sizing: border-box;
+    margin: 10px 10px 15px 10px;
+    width: 80px;
+    overflow: hidden;
+    padding: 2px;
+    cursor: default;
+    user-select: none;
+}
+
+.contenedor-icono:hover{
+    padding: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icono-escritorio{
+    width: 48px;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.extension-img{
+    margin-bottom: 10px;
+}
+
+.icono-text{
+    color: #FFF;
+    font-family: "Segoe UI", sans-serif;
+    text-shadow: 2px 2px 2px #000;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+    position: relative;
+    margin: 0;
+}
+
+/*ESTILOS DE LA VENTANA DE D.O.S. QUE JALA LA EXTENSIÓN*/
+
+.dos-extensiones{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    width: 65%;
+    position: absolute;
+    z-index: 500;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none; /*Imagen oculta---------------------------------------------------------------------------*/
+}
+
+/*ESTILOS DE LA VENTANA DE AVAYA CARGANDO EL INICIO*/
+
+.avaya-cargando{
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none; /*Imagen oculta---------------------------------------------------------------------------*/
+}
+
+/*ESTILOS DE LA VENTANA ACEPTAR DE AVAYA*/
+
+.ventana-aceptar-avaya{
+    width: 372px;
+    height: 196px;
+    background-color: rgb(180, 180, 180);
+    border-radius: 20px;
+    box-shadow: 1px 3px 3px #111;
+    font-family: Barlow, sans-serif;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 200;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none; /*Imagen oculta---------------------------------------------------------------------------*/
+}
+
+.logo-avaya-aceptar{
+    margin-left:10px;
+}
+
+.menu-ventana-aceptar-avaya{
+    position: relative;
+    left: 200px;
+    padding: 2px;
+}
+
+.menu-ventana-aceptar-avaya:hover{
+    padding: 1px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 5px;
+    border: 1px outset;
+    cursor: pointer;
+}
+
+.menu-ventana-aceptar-avaya:active{
+    background-color: rgb(59, 59, 59);
+}
+
+.ventana-aceptar-avaya-text{
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    left: 58px;
+}
+
+.contenedor-btn-ventana-aceptar-avaya{
+    text-align: center;
+    position: relative;
+    top: 85px;
+}
+
+.btn-ventana-aceptar-avaya{
+    font-family: Barlow, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(167,167,167));
+    border: rgb(167,167,167) 1px outset;
+    outline: none;
+    border-radius: 3px;
+}
+
+.btn-ventana-aceptar-avaya:hover{
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(129,150,174));
+    cursor: pointer;
+}
+
+.btn-ventana-aceptar-avaya:active{
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(79,119,159));
+}
+
+.btn-config-ventana-aceptar-avaya{
+    width: 167px;
+}
+
+.btn-cancelar-ventana-aceptar-avaya,
+.btn-aceptar-ventana-aceptar-avaya,
+.btn-config-ventana-aceptar-avaya{
+    height: 22px;
+}
+
+.btn-cancelar-ventana-aceptar-avaya,
+.btn-aceptar-ventana-aceptar-avaya{
+    width: 68px;
+    margin-left: 5px;
+}
+
+/*ESTILOS DE LA VENTANA INICIAL DE AVAYA*/
+
+.contenedor-ventana-inicial-avaya{
+    position: absolute;
+    top: 40vh;
+    left: 30vw;
+    display: none; /*ventana oculta---------------------------------------------------------------------------*/
+}
+
+.ventana-inicial-avaya{
+    border-radius: 12px;
+    box-shadow: 1px 2px 3px #000;
+    min-width: 552px;
+}
+
+/*ESTILOS DEL INPUT DE LA VENTANA INICIAL DE AVAYA*/
+
+.input-avaya{
+    position: absolute;    
+    left: 35px;
+    bottom: 11px;
+    width: 149px;
+    height: 20px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 3px;
+    background-color: rgb(218,218,218);
+    outline: none;
+    border: #777 1px solid;
+}
+
+.input-avaya:hover{
+    border-top: #333 1px solid;
+    border-left: #333 1px solid;
+}
+
+.input-avaya:focus{
+    background-color: #FFF;
+}
+
+.submit-oculto{
+    display: none;
+}
+
+/*ESTILOS ICONOS DE LA VENTANA INICIAL DE AVAYA*/
+
+.cerrar-avaya{
+    position: absolute;    
+    right: 5px;
+    top: 3px;
+    border-radius: 5px;
+    border-right: rgba(0, 0, 0, 0) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0) 1px solid;
+}
+
+.cerrar-avaya:hover{
+    background-color: rgba(100, 100, 100, 0.1);
+    border-right: rgba(0, 0, 0, 0.4) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0.4) 1px solid;
+    cursor: pointer;
+}
+
+.menu-avaya{
+    position: absolute;    
+    right: 54px;
+    top: 3px;
+    border-radius: 5px;
+    border-right: rgba(0, 0, 0, 0) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0) 1px solid;
+}
+
+.menu-avaya:hover{
+    background-color: rgba(100, 100, 100, 0.1);
+    border-right: rgba(0, 0, 0, 0.4) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0.4) 1px solid;
+    cursor: pointer;
+}
+
+.mute-avaya{
+    border-radius: 5px;
+    position: absolute; 
+    right: 95px;
+    top: 2px;
+    cursor: pointer;
+    border:rgba(0, 0, 0, 0) 2px solid;
+    display: none; /*Imagen oculta---------------------------------------------------------------------------*/
+}
+
+.mute-off-avaya{
+    border-radius: 5px;
+    position: absolute; 
+    right: 96px;
+    top: 3px;
+    border-right: rgba(0, 0, 0, 0) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0) 1px solid;
+}
+
+.mute-off-avaya:hover{
+    background-color: rgba(100, 100, 100, 0.1);
+    border-right: rgba(0, 0, 0, 0.4) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0.4) 1px solid;
+    cursor: pointer;
+}
+
+/*ESTILOS OPCIONES DEL MENU DE LA VENTANA INICIAL DE AVAYA*/
+
+.contenedor-opciones-configuracion{
+    z-index: 600;
+    display: none; /*Ventana oculta---------------------------------------------------------------------------*/
+}
+
+.opciones-configuracion{
+    position: absolute;
+    right: -160px;
+    top: 28px;
+    z-index: 600;
+}
+
+.opcion1-configuracion{
+    position: absolute;
+    width: 231px;
+    height: 22px;
+    right: -157px;
+    top: 31px;
+    z-index: 600;
+}
+
+.opcion2-configuracion{
+    position: absolute;
+    width: 231px;
+    height: 22px;
+    right: -157px;
+    top: 54px;
+    z-index: 600;
+}
+
+.opcion-salir-configuracion{
+    position: absolute;
+    width: 231px;
+    height: 22px;
+    right: -157px;
+    top: 181px;
+    z-index: 600;
+}
+
+.opcion1-configuracion:hover,
+.opcion2-configuracion:hover,
+.opcion-salir-configuracion:hover{
+    background-color: rgba(0, 255, 255, 0.2);
+    border: rgba(0, 255, 255, 0.5) 1px solid;
+    cursor: pointer;
+}
+
+/*ESTILOS DE LA VENTANA CONTROLES DEL AUDIO*/
+
+.contenedor-controles-audio{
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    min-width: 430px;
+    display: none; /*Ventana oculta---------------------------------------------------------------------------*/
+}
+
+.controles-audio{
+    border-radius: 12px;
+    box-shadow: 1px 2px 3px #000;
+}
+
+.btn{
+    font-family: Barlow, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(167,167,167));
+    border: rgb(167,167,167) 1px outset;
+    outline: none;
+    border-radius: 3px;
+    height: 22px;
+    width: 68px;
+    margin-left: 5px;
+}
+
+.btn:hover{
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(129,150,174));
+    cursor: pointer;
+}
+
+.btn:active{
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(79,119,159));
+}
+
+.contenedor-btn-controles-audio{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+
+.cerrar-controles-audio{
+    position: absolute;    
+    right: 8px;
+    top: 5px;
+    border-radius: 5px;
+    border-right: rgba(0, 0, 0, 0) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0) 1px solid;
+}
+
+.cerrar-controles-audio:hover{
+    background-color: rgba(100, 100, 100, 0.1);
+    border-right: rgba(0, 0, 0, 0.4) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0.4) 1px solid;
+    cursor: pointer;
+}
+
+.opcion-sonido{
+    position: absolute;
+    width: 134px;
+    height: 20px;
+    left: 1px;
+    top: 32px;
+}
+
+.opcion-sonido:hover{
+    background-color: rgba(168, 196, 227, 0.4);
+    border: rgba(168, 196, 227, 0.7) 1px solid;
+    cursor: pointer;
+}
+
+.btn-range{
+    width: 250px;
+    background-color: #eee;
+    -webkit-appearance: none;
+    outline: none;
+    height: 3px;
+}
+
+.btn-range::-webkit-slider-thumb {
+    width: 10px;
+    height: 20px;
+    background: #eee;
+    cursor: pointer;
+    -webkit-appearance: none;
+    box-shadow: 1px 1px 1px #888;
+  }
+
+.btn-control-audio1{
+    position: absolute;
+    left: 157px;
+    top: 196px;
+}
+
+.btn-control-audio2{
+    position: absolute;
+    left: 157px;
+    top: 262px;
+}
+
+.btn-control-audio3{
+    position: absolute;
+    left: 157px;
+    top: 350px;
+}
+
+/*ESTILOS DEL CONTENEDOR ENTRO LLAMADA*/
+
+.contenedor-entro-llamada{
+    background-color: rgb(218, 218, 218);
+    width: 545px;
+    height: 50px;
+    position: absolute;
+    top: 45px;
+    left: 5px;
+    display: none; /*Ventana oculta---------------------------------------------------------------------------*/
+}
+
+/*ESTILOS DEL CONTENEDOR DE LOS BOTONES DE LA LLAMADA*/
+
+.contenedor-btn-llamada{
+    background-color: #FFF;
+    border: rgb(169,169,169) 1px solid;
+    width: 515px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+}
+
+/*ESTILOS DE LOS BOTONES DE LA LLAMADA*/
+
+.btn-colgar{
+    position: absolute;
+    left: 427px;
+    top: 1px;
+}
+
+.btn-transferir{
+    position: absolute;
+    left: 394px;
+    top: 1px;
+}
+
+.btn-hold{
+    position: absolute;
+    left: 360px;
+    top: 1px;
+}
+
+.btn-hold-on{
+    position: absolute;
+    left: 360px;
+    top: 1px;
+    display: none; /*Imagen oculta -----------------------------------------------------------------------*/
+}
+
+.btn-colgar:hover,
+.btn-transferir:hover,
+.btn-hold:hover,
+.btn-hold-on:hover{
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(167,167,167));
+    border-radius: 2px;
+}
+
+.transferencia-contactos{
+    position: absolute;
+    top: 116px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 1px 2px 3px #000;
+    min-width: 552px;
+    display: none; /*Ventana oculta---------------------------------------------------------------------------*/
+}
+
+.btn-area-transfer{
+    cursor: pointer;
+    position: absolute;
+    right: 65px;
+    display: none; /*Ventana oculta---------------------------------------------------------------------------*/
+}
+
+.btn-area-transfer1{
+    top: 204px;
+}
+
+.btn-area-transfer2{
+    top: 226px;
+}
+
+.btn-area-transfer3{
+    top: 250px;
+}
+
+.btn-area-transfer4{
+    top: 273px;
+}
+
+.cerrar-avaya-contactos{
+    position: absolute;    
+    right: 5px;
+    top: 155px;
+    border-radius: 5px;
+    border-right: rgba(0, 0, 0, 0) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0) 1px solid;
+}
+
+.cerrar-avaya-contactos:hover{
+    background-color: rgba(100, 100, 100, 0.1);
+    border-right: rgba(0, 0, 0, 0.4) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0.4) 1px solid;
+    cursor: pointer;
+}
+
+/*ESTILOS DE LOS SPAN (TIEMPO Y TELEFONO) DE LA LLAMADA*/
+
+.tiempo{
+    font-size: 12px;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 7px;
+    left: 240px;
+}
+
+.numero-tel{
+    font-size: 12px;
+    font-family: "Segoe UI", sans-serif;
+    position: absolute;
+    top: 7px;
+    left: 140px;
+}
+
+.conferencia2{
+    position: absolute;
+    left: 430px;
+    top: -2px;
+}
+
+.conferencia2:hover{
+    background-color: rgba(100, 100, 100, 0.1);
+    cursor: pointer;
+}
+
+.conferencia1{
+    position: absolute;
+    left: 405px;
+    top: -2px;
+}
+
+.letrero-encurso{
+    position: absolute;
+    font-size: 12px;
+    font-family: "Segoe UI", sans-serif;
+    top: 2px;
+    left: 30px;
+}
+
+/*ESTILOS DE LA VENTANA DE CONFIGURACIÓN DEL SISTEMA*/
+
+.contenedor-config-sistema{
+    width: 427px;
+    height: 582px;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    z-index: 400;
+    display: none; /*Ventana oculta---------------------------------------------------------------------------*/
+}
+
+.config-sistema-tel,
+.config-sistema-agent{
+    border-radius: 20px;
+    box-shadow: #000 1px 3px 3px;
+    position: absolute;
+}
+
+/*ESTILOS DE LA X DE CERRAR*/
+
+.cerrar-config-sistema{
+    position: absolute;    
+    right: 10px;
+    top: 4px;
+    border-radius: 5px;
+    border-right: rgba(0, 0, 0, 0) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0) 1px solid;
+}
+
+.cerrar-config-sistema:hover{
+    background-color: rgba(100, 100, 100, 0.1);
+    border-right: rgba(0, 0, 0, 0.4) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0.4) 1px solid;
+    cursor: pointer;
+}
+
+/*DIVs DE CAMBIOS DE VENTANA DE TEL A AGENT*/
+
+.pestana-tel,
+.pestana-agent{
+    width: 84px;
+    height: 19px;
+    border-radius: 10px 30px 0 0;
+    cursor: pointer;
+}
+
+.pestana-tel{
+    position: absolute;
+    top: 74px;
+    left: 60px;
+    z-index: 450;
+    background-color: transparent; /* Fondo transparente -------------------------------------------------------*/
+}
+
+.pestana-agent{
+    position: absolute;
+    top: 74px;
+    left: 146px;
+    z-index: 450;
+    background-color: transparent; /* Fondo transparente -------------------------------------------------------*/
+}
+
+/*ESTILOS DE LOS BOTONES DEL CONTENEDOR DE CONFIGURACIÓN DEL SISTEMA*/
+
+.contenedor-btn-config-sistema{
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    z-index: 450;
+}
+
+.btn-guardar-config-sistema{
+    width: 167px;
+}
+
+/*ESTILOS DE LAS OPCIONES DE RANSFERENCIA*/
+
+.contenedor-opciones-transferencia{
+    width: 160px;
+    height: 52px;
+    position: absolute;
+    left: 428px;
+    top: 47px;
+    display: none; /*Ventana oculta---------------------------------------------------------------------------*/
+}
+
+.contactos{
+    width: 156px;
+    height: 24px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    cursor: pointer;
+}
+
+.btn-transferir-valor{
+    position: absolute;
+    top: 121px;
+    left: 185px;
+    cursor: pointer;
+    display: none; /*Ventana oculta---------------------------------------------------------------------------*/
+}
+
+.contactos:hover,
+.valor:hover{
+    background-color: rgba(168, 196, 227, 0.4);
+    border: rgba(168, 196, 227, 0.7) 1px solid;
+}
+
+.valor{
+    width: 156px;
+    height: 24px;
+    position: absolute;
+    top: 26px;
+    left: 2px;
+    cursor: pointer;
+}
+
+/*ESTILOS DE LA VENTANA DE PROHIBIDO JUGAR*/
+
+.contenedor-prohibido-jugar{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF;
+    display: none; /*Div oculto, se debe cambiar por display FLEX -------------------------------------------*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.texto-prohibido{
+    color: #F00;
+    font-size: 96px;
+    padding: 20px;
+    text-align: center;
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bold;
+    min-width: 80vh;
+}
+
+.texto-prohibido:hover{
+    text-shadow: 2px 3px 5px #000;
+}
+
+.img-prohibido-jugar{
+    min-width: 100vh;
+}
+
+.manual-avaya{
+    text-decoration: none;
+}

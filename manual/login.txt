@@ -1,0 +1,8 @@
+Login de prueba: 10100
+
+Logueo: 84 más dos veces el login más Enter
+Disponible: 82 más Enter
+Break: 381 más Enter
+Training: 832 más Enter
+Pausas activas: 835 más Enter
+Deslogueo: 85 más Enter
